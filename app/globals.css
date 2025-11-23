@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer utilities {
+  .page-break {
+    page-break-after: always;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+}
